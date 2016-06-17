@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="171810" started-at="2016-06-15T10:45:29Z" finished-at="2016-06-15T10:48:21Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="171810" started-at="2016-06-15T10:45:29Z" finished-at="2016-06-15T10:48:21Z">
+      <class name="connect.login.StudentClassicRegistration">
+        <test-method status="PASS" signature="configBeformtd()[pri:0, instance:connect.login.StudentClassicRegistration@270421f5]" name="configBeformtd" is-config="true" duration-ms="6426" started-at="2016-06-15T16:16:19Z" finished-at="2016-06-15T16:16:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeformtd -->
+        <test-method status="PASS" signature="RegisterStudentC15()[pri:0, instance:connect.login.StudentClassicRegistration@270421f5]" name="RegisterStudentC15" duration-ms="29022" started-at="2016-06-15T16:16:25Z" finished-at="2016-06-15T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterStudentC15 -->
+        <test-method status="PASS" signature="configAftermtd()[pri:0, instance:connect.login.StudentClassicRegistration@270421f5]" name="configAftermtd" is-config="true" duration-ms="1409" started-at="2016-06-15T16:16:54Z" finished-at="2016-06-15T16:16:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAftermtd -->
+      </class> <!-- connect.login.StudentClassicRegistration -->
+      <class name="connect.login.MyCourses">
+        <test-method status="PASS" signature="configBeformtd()[pri:0, instance:connect.login.MyCourses@5a42bbf4]" name="configBeformtd" is-config="true" duration-ms="7380" started-at="2016-06-15T16:15:29Z" finished-at="2016-06-15T16:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeformtd -->
+        <test-method status="PASS" signature="CreateCourse()[pri:0, instance:connect.login.MyCourses@5a42bbf4]" name="CreateCourse" duration-ms="41003" started-at="2016-06-15T16:15:36Z" finished-at="2016-06-15T16:16:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCourse -->
+        <test-method status="PASS" signature="configAftermtd()[pri:0, instance:connect.login.MyCourses@5a42bbf4]" name="configAftermtd" is-config="true" duration-ms="1560" started-at="2016-06-15T16:16:17Z" finished-at="2016-06-15T16:16:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAftermtd -->
+      </class> <!-- connect.login.MyCourses -->
+      <class name="connect.login.login">
+        <test-method status="PASS" signature="configBeformtd()[pri:0, instance:connect.login.login@52d455b8]" name="configBeformtd" is-config="true" duration-ms="6474" started-at="2016-06-15T16:16:56Z" finished-at="2016-06-15T16:17:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeformtd -->
+        <test-method status="PASS" signature="LoginEnterEmailAlertTest()[pri:0, instance:connect.login.login@52d455b8]" name="LoginEnterEmailAlertTest" duration-ms="8287" started-at="2016-06-15T16:17:02Z" finished-at="2016-06-15T16:17:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginEnterEmailAlertTest -->
+        <test-method status="PASS" signature="configAftermtd()[pri:0, instance:connect.login.login@52d455b8]" name="configAftermtd" is-config="true" duration-ms="241" started-at="2016-06-15T16:17:11Z" finished-at="2016-06-15T16:17:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAftermtd -->
+        <test-method status="PASS" signature="configBeformtd()[pri:0, instance:connect.login.login@52d455b8]" name="configBeformtd" is-config="true" duration-ms="6334" started-at="2016-06-15T16:17:11Z" finished-at="2016-06-15T16:17:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeformtd -->
+        <test-method status="PASS" signature="LoginEnterPwdAlertTest()[pri:0, instance:connect.login.login@52d455b8]" name="LoginEnterPwdAlertTest" duration-ms="8490" started-at="2016-06-15T16:17:17Z" finished-at="2016-06-15T16:17:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginEnterPwdAlertTest -->
+        <test-method status="PASS" signature="configAftermtd()[pri:0, instance:connect.login.login@52d455b8]" name="configAftermtd" is-config="true" duration-ms="291" started-at="2016-06-15T16:17:26Z" finished-at="2016-06-15T16:17:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAftermtd -->
+        <test-method status="PASS" signature="configBeformtd()[pri:0, instance:connect.login.login@52d455b8]" name="configBeformtd" is-config="true" duration-ms="5809" started-at="2016-06-15T16:17:26Z" finished-at="2016-06-15T16:17:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeformtd -->
+        <test-method status="PASS" signature="LoginForgotPwdTest()[pri:0, instance:connect.login.login@52d455b8]" name="LoginForgotPwdTest" duration-ms="8308" started-at="2016-06-15T16:17:32Z" finished-at="2016-06-15T16:17:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginForgotPwdTest -->
+        <test-method status="PASS" signature="configAftermtd()[pri:0, instance:connect.login.login@52d455b8]" name="configAftermtd" is-config="true" duration-ms="368" started-at="2016-06-15T16:17:40Z" finished-at="2016-06-15T16:17:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAftermtd -->
+        <test-method status="PASS" signature="configBeformtd()[pri:0, instance:connect.login.login@52d455b8]" name="configBeformtd" is-config="true" duration-ms="5779" started-at="2016-06-15T16:17:41Z" finished-at="2016-06-15T16:17:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeformtd -->
+        <test-method status="PASS" signature="LoginHelpLinkTest()[pri:0, instance:connect.login.login@52d455b8]" name="LoginHelpLinkTest" duration-ms="6491" started-at="2016-06-15T16:17:46Z" finished-at="2016-06-15T16:17:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginHelpLinkTest -->
+        <test-method status="PASS" signature="configAftermtd()[pri:0, instance:connect.login.login@52d455b8]" name="configAftermtd" is-config="true" duration-ms="230" started-at="2016-06-15T16:17:53Z" finished-at="2016-06-15T16:17:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAftermtd -->
+        <test-method status="PASS" signature="configBeformtd()[pri:0, instance:connect.login.login@52d455b8]" name="configBeformtd" is-config="true" duration-ms="6298" started-at="2016-06-15T16:17:53Z" finished-at="2016-06-15T16:17:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeformtd -->
+        <test-method status="PASS" signature="LoginTOUlinkTest()[pri:0, instance:connect.login.login@52d455b8]" name="LoginTOUlinkTest" duration-ms="5980" started-at="2016-06-15T16:17:59Z" finished-at="2016-06-15T16:18:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTOUlinkTest -->
+        <test-method status="PASS" signature="configAftermtd()[pri:0, instance:connect.login.login@52d455b8]" name="configAftermtd" is-config="true" duration-ms="243" started-at="2016-06-15T16:18:05Z" finished-at="2016-06-15T16:18:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAftermtd -->
+        <test-method status="PASS" signature="configBeformtd()[pri:0, instance:connect.login.login@52d455b8]" name="configBeformtd" is-config="true" duration-ms="5776" started-at="2016-06-15T16:18:06Z" finished-at="2016-06-15T16:18:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeformtd -->
+        <test-method status="PASS" signature="LoginTest()[pri:0, instance:connect.login.login@52d455b8]" name="LoginTest" duration-ms="9251" started-at="2016-06-15T16:18:11Z" finished-at="2016-06-15T16:18:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="configAftermtd()[pri:0, instance:connect.login.login@52d455b8]" name="configAftermtd" is-config="true" duration-ms="347" started-at="2016-06-15T16:18:21Z" finished-at="2016-06-15T16:18:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAftermtd -->
+      </class> <!-- connect.login.login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
