@@ -15,5 +15,6 @@ public interface Constants
 	String studentpwd = "Aa123456";
 	String studentFirstName="stgcclassic";
 	String studentLastName = "student1";
+	String test = "new";
 
 }
