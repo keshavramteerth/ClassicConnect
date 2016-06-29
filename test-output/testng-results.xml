@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46815" started-at="2016-06-28T14:07:51Z" finished-at="2016-06-28T14:08:38Z">
+  <suite name="Default suite" duration-ms="61537" started-at="2016-06-29T12:56:59Z" finished-at="2016-06-29T12:58:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46815" started-at="2016-06-28T14:07:51Z" finished-at="2016-06-28T14:08:38Z">
+    <test name="Default test" duration-ms="61537" started-at="2016-06-29T12:56:59Z" finished-at="2016-06-29T12:58:00Z">
       <class name="connect.paam.paamlogin">
-        <test-method status="PASS" signature="configBeformtd()[pri:0, instance:connect.paam.paamlogin@96532d6]" name="configBeformtd" is-config="true" duration-ms="6320" started-at="2016-06-28T19:37:51Z" finished-at="2016-06-28T19:37:57Z">
+        <test-method status="PASS" signature="configBeformtd()[pri:0, instance:connect.paam.paamlogin@96532d6]" name="configBeformtd" is-config="true" duration-ms="19140" started-at="2016-06-29T18:26:59Z" finished-at="2016-06-29T18:27:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBeformtd -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:connect.paam.paamlogin@96532d6]" name="loginTest" duration-ms="40480" started-at="2016-06-28T19:37:57Z" finished-at="2016-06-28T19:38:38Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:connect.paam.paamlogin@96532d6]" name="loginTest" duration-ms="42370" started-at="2016-06-29T18:27:18Z" finished-at="2016-06-29T18:28:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->

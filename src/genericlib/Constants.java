@@ -17,7 +17,12 @@ public interface Constants
 	String studentLastName = "student1";
 	String test = "student1";
 	
-	String c15userid = "stgstudent3@gmail.com";
+	// Staging
+//	String c15userid = "stgstudent3@gmail.com";
+//	String c15password ="Aa123456";
+//	String c15url="https://newconnectqastg.mheducation.com/flow/connect.html";
+	//Dev2
+	String c15userid = "textbook1@gmail.com";
 	String c15password ="Aa123456";
-	String c15url="https://newconnectqastg.mheducation.com/flow/connect.html";
+	String c15url="http://newconnectdev2.mheducation.com/flow/flowjs.html?name=container";
 }
