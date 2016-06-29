@@ -22,7 +22,7 @@ public interface Constants
 //	String c15password ="Aa123456";
 //	String c15url="https://newconnectqastg.mheducation.com/flow/connect.html";
 	//Dev2
-	String c15userid = "textbook1@gmail.com";
+	String c15useriddev2 = "textbook1@gmail.com";
 	String c15password ="Aa123456";
 	String c15url="http://newconnectdev2.mheducation.com/flow/flowjs.html?name=container";
 }
