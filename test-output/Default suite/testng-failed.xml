@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="connect.login.MyCourses">
+      <class name="connect.paam.paamlogin">
         <methods>
           <include name="configBeformtd"/>
-          <include name="CreateCourse"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- connect.login.MyCourses -->
+      </class> <!-- connect.paam.paamlogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

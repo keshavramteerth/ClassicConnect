@@ -13,6 +13,7 @@
         <methods>
           <include name="configBeformtd"/>
           <include name="configAftermtd"/>
+          <include name="CreateCourse"/>
         </methods>
       </class> <!-- connect.login.MyCourses -->
       <class name="connect.login.StudentClassicRegistration">

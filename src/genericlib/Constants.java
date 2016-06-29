@@ -16,5 +16,8 @@ public interface Constants
 	String studentFirstName="stgcclassic";
 	String studentLastName = "student1";
 	String test = "student1";
-
+	
+	String c15userid = "stgstudent3@gmail.com";
+	String c15password ="Aa123456";
+	String c15url="https://newconnectqastg.mheducation.com/flow/connect.html";
 }

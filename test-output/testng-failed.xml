@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
-  <test name="Test(failed)" parallel="none">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="connect.login.login">
+      <class name="connect.paam.paamlogin">
         <methods>
           <include name="configBeformtd"/>
-          <include name="configAftermtd"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- connect.login.login -->
-      <class name="connect.login.MyCourses">
-        <methods>
-          <include name="configBeformtd"/>
-          <include name="configAftermtd"/>
-        </methods>
-      </class> <!-- connect.login.MyCourses -->
-      <class name="connect.login.StudentClassicRegistration">
-        <methods>
-          <include name="configAftermtd"/>
-          <include name="RegisterStudentC15"/>
-          <include name="configBeformtd"/>
-        </methods>
-      </class> <!-- connect.login.StudentClassicRegistration -->
+      </class> <!-- connect.paam.paamlogin -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
