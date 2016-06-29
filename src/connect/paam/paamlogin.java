@@ -28,11 +28,11 @@ public class paamlogin extends WebdriverCommonlib
 
 	}
 
-//	@AfterMethod
-//	public void configAftermtd()
-//	{
-//		driver.quit();
-//	}
+	@AfterMethod
+	public void configAftermtd()
+	{
+		driver.quit();
+	}
 	
 	@Test
 	public void loginTest() throws AWTException, InterruptedException
