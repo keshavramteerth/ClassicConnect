@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import genericlib.Constants;
 import genericlib.Driver;
+import genericlib.Log;
 import genericlib.WebdriverCommonlib;
 
 public class CoursePage extends WebdriverCommonlib
@@ -93,29 +94,53 @@ public class CoursePage extends WebdriverCommonlib
 	{
 		
 		cancelBtn.click();
+		Log.info("Cancel Button Clicked");
 		waitForpageToLoad();
+		Log.info("waiting For page To Load");
 		addCourseBtn.click();
+		Log.info("Add Course button clicked");
 		waitForpageToLoad();
+		Log.info("waiting For page To Load");
 		courseselbox.sendKeys("Economics",Keys.DOWN,Keys.ENTER);
+		Log.info("sent search keyword for course");
 		waitForpageToLoad();
+		Log.info("waiting For page To Load");
 		courseselbox.sendKeys("Economics",Keys.DOWN,Keys.ENTER);
+		Log.info("Selecting searched course");
 		waitForpageToLoad();
+		Log.info("waiting For page To Load");
 		isbn.click();
+		Log.info("Clicking particular ISBN");
 		waitForpageToLoad();
+		Log.info("waiting For page To Load");
 		bundleselectionradioBtn.click();
+		Log.info("Selecting bundle");
 		nxtBtn.click();
+		Log.info("Clicking on Next button");
 		waitForpageToLoad();
+		Log.info("waiting For page To Load");
 		courseName.sendKeys(Constants.courseName);
+		Log.info("Entering Course Name");
 		timezonedropdown.click();
+		Log.info("Clicking on Time Zone dropdown");
 		Thread.sleep(500);
+		Log.info("waiting For page To Load");
 		ISTtimezone.click();
+		Log.info("Selecting Time Zone");
 		sectionName.sendKeys(Constants.sectionName);
+		Log.info("Entering Section Name");
 		createbutton.click();
+		Log.info("Clicking on Create Course button");
 		waitForpageToLoad();
+		Log.info("waiting For page To Load");
 		continuesectionhomebutton.click();
+		Log.info("Clicking on Continue to Section Home button");
 		waitForpageToLoad();
+		Log.info("waiting For page To Load");
 		continue_section.click();
+		Log.info("navigating to Section Home");
 		String coursenameobtained = coursenamechk.getText();
+		Log.info("Fetching the created Course name");
 		System.out.println(coursenameobtained);
 //		if(coursenameobtained.equalsIgnoreCase(Constants.courseName))
 //		{

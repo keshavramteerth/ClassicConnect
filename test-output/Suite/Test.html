@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 23 17:54:10 IST 2016</td>
+<td>Started on:</td><td>Tue Jul 26 13:12:43 IST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>213 seconds (213833 ms)</td>
+<tr><td>Total time:</td><td>51 seconds (51469 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,74 +68,33 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='connect.login.MyCourses.CreateCourse()'><b>CreateCourse</b><br>Test class: connect.login.MyCourses</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;module-list-container&apos;]/ul[@class=&apos;left module-list&apos;]/li[2]/span[@class=&apos;module-checkbox-container&apos;]&quot;}
-Command duration or timeout: 20.04 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;TRICONNODE211&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b9204094-f481-4a4f-9584-f47cbb229e15
-*** Element info: {Using=xpath, value=//div[@class=&apos;module-list-container&apos;]/ul[@class=&apos;left module-list&apos;]/li[2]/span[@class=&apos;module-checkbox-container&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy6.click(Unknown Source)
-	at pageobjectrepolib.CoursePage.courseCreation(CoursePage.java:105)
-	at connect.login.MyCourses.CreateCourse(MyCourses.java:53)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;module-list-container&apos;]/ul[@class=&apos;left module-list&apos;]/li[2]/span[@class=&apos;module-checkbox-container&apos;]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;TRICONNODE211&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Windows/TEMP/anonymous4963505785723909133webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous4963505785723909133webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1552326679", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1552326679'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;module-list-container&apos;]/ul[@class=&apos;left module-list&apos;]/li[2]/span[@class=&apos;module-checkbox-container&apos;]&quot;}
-Command duration or timeout: 20.04 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;TRICONNODE211&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b9204094-f481-4a4f-9584-f47cbb229e15
-*** Element info: {Using=xpath, value=//div[@class=&apos;module-list-container&apos;]/ul[@class=&apos;left module-list&apos;]/li[2]/span[@class=&apos;module-checkbox-container&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy6.click(Unknown Source)
-	at pageobjectrepolib.CoursePage.courseCreation(CoursePage.java:105)
-	at connect.login.MyCourses.CreateCourse(MyCourses.java:53)
+<td title='connect.assignmentscreation.FileAttachment.configBeformtd()'><b>configBeformtd</b><br>Test class: connect.assignmentscreation.FileAttachment</td>
+<td><div><pre>java.lang.NoClassDefFoundError: org/apache/log4j/xml/DOMConfigurator
+	at connect.assignmentscreation.FileAttachment.configBeformtd(FileAttachment.java:29)
+Caused by: java.lang.ClassNotFoundException: org.apache.log4j.xml.DOMConfigurator
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 26 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1166726978", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1166726978'><pre>java.lang.NoClassDefFoundError: org/apache/log4j/xml/DOMConfigurator
+	at connect.assignmentscreation.FileAttachment.configBeformtd(FileAttachment.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:497)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -153,105 +112,28 @@ Session ID: b9204094-f481-4a4f-9584-f47cbb229e15
 	at org.testng.TestNG.run(TestNG.java:1048)
 	at org.testng.TestNG.privateMain(TestNG.java:1355)
 	at org.testng.TestNG.main(TestNG.java:1324)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;module-list-container&apos;]/ul[@class=&apos;left module-list&apos;]/li[2]/span[@class=&apos;module-checkbox-container&apos;]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;TRICONNODE211&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Windows/TEMP/anonymous4963505785723909133webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous4963505785723909133webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+Caused by: java.lang.ClassNotFoundException: org.apache.log4j.xml.DOMConfigurator
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 26 more
 </pre></div></td>
-<td>90</td>
-<td>connect.login.MyCourses@5a42bbf4</td></tr>
+<td>0</td>
+<td>connect.assignmentscreation.FileAttachment@21bcffb5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='connect.login.StudentClassicRegistration.RegisterStudentC15()'><b>RegisterStudentC15</b><br>Test class: connect.login.StudentClassicRegistration</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Register Now&apos;]&quot;}
-Command duration or timeout: 20.04 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;TRICONNODE211&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1e5df7e1-5a94-4b78-9165-7f2a639d6f03
-*** Element info: {Using=xpath, value=//a[@title=&apos;Register Now&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy6.click(Unknown Source)
-	at pageobjectrepolib.RegistrationPage.registerstudent(RegistrationPage.java:68)
-	at connect.login.StudentClassicRegistration.RegisterStudentC15(StudentClassicRegistration.java:40)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Register Now&apos;]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;TRICONNODE211&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Windows/TEMP/anonymous7646737283966426585webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous7646737283966426585webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace41489123", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace41489123'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Register Now&apos;]&quot;}
-Command duration or timeout: 20.04 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;TRICONNODE211&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1e5df7e1-5a94-4b78-9165-7f2a639d6f03
-*** Element info: {Using=xpath, value=//a[@title=&apos;Register Now&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy6.click(Unknown Source)
-	at pageobjectrepolib.RegistrationPage.registerstudent(RegistrationPage.java:68)
-	at connect.login.StudentClassicRegistration.RegisterStudentC15(StudentClassicRegistration.java:40)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.TestNG.privateMain(TestNG.java:1355)
-	at org.testng.TestNG.main(TestNG.java:1324)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Register Now&apos;]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;TRICONNODE211&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Windows/TEMP/anonymous7646737283966426585webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous7646737283966426585webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-</pre></div></td>
-<td>23</td>
-<td>connect.login.StudentClassicRegistration@270421f5</td></tr>
+<td title='connect.assignmentscreation.FileAttachment.configAftermtd()'><b>configAftermtd</b><br>Test class: connect.assignmentscreation.FileAttachment</td>
+<td></td>
+<td>0</td>
+<td>connect.assignmentscreation.FileAttachment@21bcffb5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -261,35 +143,23 @@ Driver info: driver.version: unknown
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='connect.login.login.LoginEnterEmailAlertTest()'><b>LoginEnterEmailAlertTest</b><br>Test class: connect.login.login</td>
+<td title='connect.paam.paamlogin.loginTest()'><b>loginTest</b><br>Test class: connect.paam.paamlogin</td>
 <td></td>
-<td>6</td>
-<td>connect.login.login@52d455b8</td></tr>
+<td>42</td>
+<td>connect.paam.paamlogin@380fb434</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='connect.login.login.LoginEnterPwdAlertTest()'><b>LoginEnterPwdAlertTest</b><br>Test class: connect.login.login</td>
+<td title='connect.assignmentscreation.FileAttachment.CreateFileAttachmentAssignmentTest()'><b>CreateFileAttachmentAssignmentTest</b><br>Test class: connect.assignmentscreation.FileAttachment</td>
 <td></td>
-<td>5</td>
-<td>connect.login.login@52d455b8</td></tr>
-<tr>
-<td title='connect.login.login.LoginForgotPwdTest()'><b>LoginForgotPwdTest</b><br>Test class: connect.login.login</td>
-<td></td>
-<td>6</td>
-<td>connect.login.login@52d455b8</td></tr>
-<tr>
-<td title='connect.login.login.LoginHelpLinkTest()'><b>LoginHelpLinkTest</b><br>Test class: connect.login.login</td>
-<td></td>
-<td>6</td>
-<td>connect.login.login@52d455b8</td></tr>
-<tr>
-<td title='connect.login.login.LoginTOUlinkTest()'><b>LoginTOUlinkTest</b><br>Test class: connect.login.login</td>
-<td></td>
-<td>5</td>
-<td>connect.login.login@52d455b8</td></tr>
-<tr>
-<td title='connect.login.login.LoginTest()'><b>LoginTest</b><br>Test class: connect.login.login</td>
-<td></td>
-<td>8</td>
-<td>connect.login.login@52d455b8</td></tr>
+<td>0</td>
+<td>connect.assignmentscreation.FileAttachment@21bcffb5</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,7 +1,12 @@
 package connect.login;
 
+import genericlib.CaptureScreenshot;
 import genericlib.Constants;
 import genericlib.Driver;
+import genericlib.Log;
+import genericlib.Retry;
+
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
@@ -17,12 +22,13 @@ public class login
 	@BeforeMethod
 	public void configBeformtd() throws InterruptedException
 	{
+		DOMConfigurator.configure("log4j.xml");
 		//launch browser
 		driver = Driver.getBrowser();
 		signin = PageFactory.initElements(driver, LoginPage.class);
 		
 	}
-	@Test
+	@Test(retryAnalyzer=Retry.class)
 	public void LoginHelpLinkTest()
 	{
 		signin.clickHelpLink();
@@ -31,7 +37,16 @@ public class login
 	@Test
 	public void LoginEnterEmailAlertTest()
 	{
-		signin.checkenteremailalert(Constants.url);
+		try
+		{
+			signin.checkenteremailalert(Constants.url);
+		}
+		catch(Exception e)
+		{
+			CaptureScreenshot.captureScreenshot("LoginEnterEmailAlertTest");
+			Log.info("Screen shot taken");
+		}
+		
 	}
 	
 	@Test

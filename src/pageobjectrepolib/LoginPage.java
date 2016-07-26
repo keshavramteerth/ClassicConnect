@@ -2,6 +2,7 @@ package pageobjectrepolib;
 
 import genericlib.Constants;
 import genericlib.Driver;
+import genericlib.Log;
 import genericlib.WebdriverCommonlib;
 
 import org.openqa.selenium.WebElement;
@@ -10,7 +11,6 @@ import org.testng.Assert;
 
 public class LoginPage extends WebdriverCommonlib
 {
-	
 	
 	@FindBy(id="userName")
 	private WebElement userNameEdt;
@@ -45,24 +45,39 @@ public class LoginPage extends WebdriverCommonlib
 	public void commonmtd()
 	{
 		Driver.driver.get(Constants.url);
+		Log.info("Fetching URL from Constants file");
 		Driver.driver.manage().window().maximize();
+		Log.info("Maximising the browser window");
 		waitForpageToLoad();
+		Log.info("waiting For page To Load");
 	}
 	
 	public void logintoapp(String userName , String password , String url) throws InterruptedException
 	{
 		commonmtd();
-		userNameEdt.sendKeys(userName);
-		passwordEdt.sendKeys(password);
-		signinBtn.click();
 		
+		userNameEdt.sendKeys(userName);
+		Log.info("UserName entered");
+		
+		passwordEdt.sendKeys(password);
+		Log.info("password entered");
+		
+		signinBtn.click();
+		Log.info("Signin button clicked");
+		
+		waitForpageToLoad();
+		Log.info("waiting For page To Load");
+		Log.info("Logged in successfully");
 	}
 	
 	public void CheckTOUlink(String url)
 	{
 		commonmtd();
 		TOULink.click();
+		Log.info("TOU Link clicked");
 		waitForpageToLoad();
+		Log.info("waiting For page To Load");
+		
 		
 	}
 	
@@ -70,21 +85,27 @@ public class LoginPage extends WebdriverCommonlib
 	{
 		commonmtd();
 		signinBtn.click();
+		Log.info("Signin button clicked");
 		String expAlertmsg = enteremailalert.getText();
+		Log.info("captured alert text message");
 		Assert.assertEquals(expAlertmsg, Constants.actemteremailAlertmsg, "User msg is not verfied==FAIL");
+		Log.info("verfied actual and exp alert message");
 	}
 	
 	public void checkForgotPwdLink()
 	{
 		commonmtd();
 		forgotPasswordLink.click();
+		Log.info("forgot Password Link Clicked");
 		waitForpageToLoad();
 		if(forgorpasswordpage.isDisplayed())
 		{
+			Log.info("Redirected to Forgot Password Page");
 			System.out.println("Redirected to Forgot Password Page");
 		}
 		else
 		{
+			Log.error("Not Redirected to Forgot Password Page");
 			System.out.println("Not Redirected to Forgot Password Page");
 		}
 	}
@@ -93,8 +114,11 @@ public class LoginPage extends WebdriverCommonlib
 	{
 		commonmtd();
 		userNameEdt.sendKeys(userName);
+		Log.info("userName entered");
 		signinBtn.click();
+		Log.info("Signin button clicked");
 		String expenterpswdAlertmsg = enterpswdalert.getText();
+		Log.info("Fetching enter password alert text message");
 		Assert.assertEquals(expenterpswdAlertmsg, Constants.actenterpaswdalert, "User msg is not verfied==FAIL");
 	}
 	
@@ -102,5 +126,6 @@ public class LoginPage extends WebdriverCommonlib
 	{
 		commonmtd();
         help.click();
+        Log.info("help Link clicked");
 	}
 }

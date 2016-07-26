@@ -4,6 +4,7 @@ import java.awt.AWTException;
 
 import genericlib.Constants;
 import genericlib.Driver;
+import genericlib.Retry;
 import genericlib.WebdriverCommonlib;
 
 import org.openqa.selenium.WebDriver;
@@ -13,6 +14,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pageobjectrepolib.PaamLoginPage;
+
+
 
 public class paamlogin extends WebdriverCommonlib
 {
@@ -34,9 +37,10 @@ public class paamlogin extends WebdriverCommonlib
 		driver.quit();
 	}
 	
-	@Test
+	@Test(retryAnalyzer=Retry.class)
 	public void loginTest() throws AWTException, InterruptedException
 	{
+		
 		paamsignin.commonmtd();
 		
 		//paamsignin.logintoc15(Constants.c15userid, Constants.c15password);
