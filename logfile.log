@@ -975,3 +975,29 @@
 2016-07-25 19:16:58,238 INFO  [Log] Waiting For Page To Load 
 2016-07-25 19:17:00,675 INFO  [Log] Clicking on Assign Button 
 2016-07-25 19:17:00,676 INFO  [Log] Blog Assignment Created Successfully 
+2016-07-26 16:14:03,284 INFO  [Log] Fetching URL from Constants file 
+2016-07-26 16:14:03,532 INFO  [Log] Maximising the browser window 
+2016-07-26 16:14:03,546 INFO  [Log] waiting For page To Load 
+2016-07-26 16:14:03,655 INFO  [Log] UserName entered 
+2016-07-26 16:14:03,817 INFO  [Log] password entered 
+2016-07-26 16:14:07,423 INFO  [Log] Signin button clicked 
+2016-07-26 16:14:11,626 INFO  [Log] waiting For page To Load 
+2016-07-26 16:14:11,626 INFO  [Log] Logged in successfully 
+2016-07-26 16:14:23,393 INFO  [Log] Clicking on Section 
+2016-07-26 16:14:23,403 INFO  [Log] Waiting For Page To Load 
+2016-07-26 16:14:23,800 INFO  [Log] Clicking on Add Assignment tab 
+2016-07-26 16:14:23,801 INFO  [Log] Selected Section & clicking on Add Assignment done 
+2016-07-26 16:14:29,833 INFO  [Log] Clicking on File Attachment Assignment Link 
+2016-07-26 16:14:29,849 INFO  [Log] Waiting For Page To Load 
+2016-07-26 16:14:29,933 INFO  [Log] Entering File Attachment Assignment Name 
+2016-07-26 16:14:30,175 INFO  [Log] Entering File Attachment Assignment Description 
+2016-07-26 16:14:33,435 INFO  [Log] Moving on to Next Page 
+2016-07-26 16:14:37,678 INFO  [Log] Selecting Current Date from Date Picker 
+2016-07-26 16:14:42,877 INFO  [Log] Entering Current System Hour in the field 
+2016-07-26 16:14:46,043 INFO  [Log] Entering Current System Minutre in the field 
+2016-07-26 16:14:46,307 INFO  [Log] Selecting am or pm  
+2016-07-26 16:14:46,435 INFO  [Log] Clicking on Assign button 
+2016-07-27 11:13:36,768 INFO  [Log] Launching Browser 
+2016-07-27 11:13:40,435 INFO  [Log] Launching WebSite 
+2016-07-27 11:14:58,074 INFO  [Log] Launching Browser 
+2016-07-27 11:15:00,516 INFO  [Log] Launching WebSite 

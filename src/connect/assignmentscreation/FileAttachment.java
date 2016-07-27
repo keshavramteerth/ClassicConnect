@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import pageobjectrepolib.Assignments;
 import pageobjectrepolib.LoginPage;
 
-public class FileAttachment 
+public class FileAttachment extends WebdriverCommonlib
 {
 	public WebDriver driver;
 	LoginPage signin;

@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="none">
   <test name="Test">
     <classes>
-      <class name="connect.login.login"/>
+      <class name="connect.assignmentscreation.FileAttachment"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
