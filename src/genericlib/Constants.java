@@ -49,4 +49,26 @@ public interface Constants
 	
 	String WebLinkName = "Web Link 1";
 	String WebLinkURL = "http://www.google.com";
+	
+	// Group Assignment details
+	
+	String GroupAssignmentName ="Group Assignment";
+	String GroupAssignmenttDesc ="Group Description";
+	String GroupAssignmenttPoints ="40";
+	String GroupAssignmentTopicName ="Group Assignment Topic";
+	
+	// Speech Assignment details
+	
+	String SpeechAssignmentName ="Speech Assignment";
+	String SpeechAssignmenttDesc ="Speech Description";
+	
+	// Writing Assignment details
+	
+	String WritingAssignmentName ="Writing Assignment";
+	String WritingAssignmenttDesc ="Writing Description";
+	
+	// EZT Assignment details
+	
+	String EZTAssignmentName ="EZT Assignment";
+	
 }

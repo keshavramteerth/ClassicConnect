@@ -3,30 +3,31 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
   <test name="Test(failed)" parallel="none">
     <classes>
-      <class name="connect.assignmentscreation.WebActivityAssignment">
-        <methods>
-          <include name="configBeformtd"/>
-          <include name="CreateWebActivityAssignmentTest"/>
-        </methods>
-      </class> <!-- connect.assignmentscreation.WebActivityAssignment -->
       <class name="connect.assignmentscreation.DiscussionBoardAssignment">
         <methods>
+          <include name="configAftermtd"/>
           <include name="configBeformtd"/>
           <include name="CreateDiscussionBoardAssignmentTest"/>
         </methods>
       </class> <!-- connect.assignmentscreation.DiscussionBoardAssignment -->
-      <class name="connect.assignmentscreation.BlogAssignment">
-        <methods>
-          <include name="CreateBlogAssignmentTest"/>
-          <include name="configBeformtd"/>
-        </methods>
-      </class> <!-- connect.assignmentscreation.BlogAssignment -->
       <class name="connect.assignmentscreation.FileAttachment">
         <methods>
-          <include name="CreateFileAttachmentAssignmentTest"/>
+          <include name="configAftermtd"/>
           <include name="configBeformtd"/>
         </methods>
       </class> <!-- connect.assignmentscreation.FileAttachment -->
+      <class name="connect.assignmentscreation.BlogAssignment">
+        <methods>
+          <include name="configAftermtd"/>
+          <include name="configBeformtd"/>
+        </methods>
+      </class> <!-- connect.assignmentscreation.BlogAssignment -->
+      <class name="connect.assignmentscreation.WebActivityAssignment">
+        <methods>
+          <include name="configBeformtd"/>
+          <include name="configAftermtd"/>
+        </methods>
+      </class> <!-- connect.assignmentscreation.WebActivityAssignment -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

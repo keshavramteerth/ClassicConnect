@@ -19,14 +19,14 @@ import org.testng.annotations.Test;
 import pageobjectrepolib.Assignments;
 import pageobjectrepolib.LoginPage;
 
-public class BlogAssignment 
+public class SpeechAssignment 
 {
 	public WebDriver driver;
 	LoginPage signin;
 	WebdriverCommonlib wc;
 	Assignments asgmnt;
 	ExcelUtility elib;
-	
+
 	@BeforeMethod
 	public void configBeformtd() throws InterruptedException
 	{
@@ -41,14 +41,17 @@ public class BlogAssignment
 	}
 	
 	@Test
-	public void CreateBlogAssignmentTest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException
+	public void CreateSpeechAssignmentTest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException
 	{
-		String BlogtAssignmentName = elib.getExcelData("Sheet1", 3, 1);
-		String BlogAssignmentDescription = elib.getExcelData("Sheet1", 3, 2);
+		// Get Test Data
 		
+		String SpeechAssignmentName = elib.getExcelData("Sheet1", 6, 1);
+		String SpeechAssignmentDescription = elib.getExcelData("Sheet1", 6, 2);
+				
 		signin.logintoapp(Constants.userid, Constants.password, Constants.url);
 		asgmnt.selectSection();
-		asgmnt.CreateBlogAssignment(BlogtAssignmentName,BlogAssignmentDescription);
+		asgmnt.CreateSpeechAssignment(SpeechAssignmentName,SpeechAssignmentDescription);
+		
 	}
 	
 	@AfterMethod

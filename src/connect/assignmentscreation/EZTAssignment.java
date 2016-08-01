@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 import pageobjectrepolib.Assignments;
 import pageobjectrepolib.LoginPage;
 
-public class BlogAssignment 
+public class EZTAssignment 
 {
 	public WebDriver driver;
 	LoginPage signin;
@@ -41,14 +41,16 @@ public class BlogAssignment
 	}
 	
 	@Test
-	public void CreateBlogAssignmentTest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException
+	public void CreateEZTAssignmentTest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException
 	{
-		String BlogtAssignmentName = elib.getExcelData("Sheet1", 3, 1);
-		String BlogAssignmentDescription = elib.getExcelData("Sheet1", 3, 2);
+		// Get Test Data
+		
+		String EZTAssignmentName = elib.getExcelData("Sheet1", 8, 1);
+		
 		
 		signin.logintoapp(Constants.userid, Constants.password, Constants.url);
 		asgmnt.selectSection();
-		asgmnt.CreateBlogAssignment(BlogtAssignmentName,BlogAssignmentDescription);
+		asgmnt.CreateEZTAssignment(EZTAssignmentName);
 	}
 	
 	@AfterMethod

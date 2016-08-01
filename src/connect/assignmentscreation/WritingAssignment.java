@@ -19,14 +19,14 @@ import org.testng.annotations.Test;
 import pageobjectrepolib.Assignments;
 import pageobjectrepolib.LoginPage;
 
-public class BlogAssignment 
+public class WritingAssignment 
 {
 	public WebDriver driver;
 	LoginPage signin;
 	WebdriverCommonlib wc;
 	Assignments asgmnt;
 	ExcelUtility elib;
-	
+
 	@BeforeMethod
 	public void configBeformtd() throws InterruptedException
 	{
@@ -39,18 +39,18 @@ public class BlogAssignment
 		elib = PageFactory.initElements(driver, ExcelUtility.class);
 
 	}
-	
 	@Test
-	public void CreateBlogAssignmentTest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException
+	public void CreateWritingAssignmentTest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException
 	{
-		String BlogtAssignmentName = elib.getExcelData("Sheet1", 3, 1);
-		String BlogAssignmentDescription = elib.getExcelData("Sheet1", 3, 2);
+		// Get Test Data
 		
+		String WritingAssignmentName = elib.getExcelData("Sheet1", 7, 1);
+		String WritingAssignmentDescription = elib.getExcelData("Sheet1", 7, 2);
+				
 		signin.logintoapp(Constants.userid, Constants.password, Constants.url);
 		asgmnt.selectSection();
-		asgmnt.CreateBlogAssignment(BlogtAssignmentName,BlogAssignmentDescription);
+		asgmnt.CreateWritingAssignment(WritingAssignmentName,WritingAssignmentDescription);
 	}
-	
 	@AfterMethod
 	public void configAftermtd()
 	{

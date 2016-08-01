@@ -4,6 +4,10 @@
   <test name="Test">
     <classes>
       <class name="connect.assignmentscreation.FileAttachment"/>
+      <class name="connect.assignmentscreation.GroupAssignment"/>
+      <class name="connect.assignmentscreation.DiscussionBoardAssignment"/>
+      <class name="connect.assignmentscreation.WebActivityAssignment"/>
+      <class name="connect.assignmentscreation.BlogAssignment"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
