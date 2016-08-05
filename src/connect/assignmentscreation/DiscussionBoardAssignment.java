@@ -45,8 +45,8 @@ public class DiscussionBoardAssignment
 	{
 		// Get Test Data
 		
-		String DiscussionAssignmentName = elib.getExcelData("Sheet1", 2, 1);
-		String DiscussionAssignmentDescription = elib.getExcelData("Sheet1", 2, 2);
+		String DiscussionAssignmentName = elib.getExcelData("Assignments", 2, 1);
+		String DiscussionAssignmentDescription = elib.getExcelData("Assignments", 2, 2);
 		
 		signin.logintoapp(Constants.userid, Constants.password, Constants.url);
 		asgmnt.selectSection();

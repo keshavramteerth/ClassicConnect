@@ -44,8 +44,8 @@ public class WritingAssignment
 	{
 		// Get Test Data
 		
-		String WritingAssignmentName = elib.getExcelData("Sheet1", 7, 1);
-		String WritingAssignmentDescription = elib.getExcelData("Sheet1", 7, 2);
+		String WritingAssignmentName = elib.getExcelData("Assignments", 7, 1);
+		String WritingAssignmentDescription = elib.getExcelData("Assignments", 7, 2);
 				
 		signin.logintoapp(Constants.userid, Constants.password, Constants.url);
 		asgmnt.selectSection();

@@ -1,12 +1,10 @@
-package connect.assignmentscreation;
+package connect.studentregistration;
 
 import java.io.IOException;
 
-import genericlib.Constants;
 import genericlib.Driver;
 import genericlib.ExcelUtility;
 import genericlib.WebdriverCommonlib;
-
 import org.apache.log4j.xml.DOMConfigurator;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -15,18 +13,19 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import pageobjectrepolib.Assignments;
+import pageobjectrepolib.CoursePage;
 import pageobjectrepolib.LoginPage;
+import pageobjectrepolib.RegistrationPage;
 
-public class BlogAssignment 
+public class StudentC15Registration 
 {
 	public WebDriver driver;
 	LoginPage signin;
+	CoursePage course;
 	WebdriverCommonlib wc;
-	Assignments asgmnt;
+	RegistrationPage rp;
 	ExcelUtility elib;
-	
+
 	@BeforeMethod
 	public void configBeformtd() throws InterruptedException
 	{
@@ -34,26 +33,30 @@ public class BlogAssignment
 		//launch browser
 		driver = Driver.getBrowser();
 		signin = PageFactory.initElements(driver, LoginPage.class);
-		asgmnt = PageFactory.initElements(driver, Assignments.class);
+		course = PageFactory.initElements(driver, CoursePage.class);
 		wc = PageFactory.initElements(driver, WebdriverCommonlib.class);
+		rp = PageFactory.initElements(driver, RegistrationPage.class);
 		elib = PageFactory.initElements(driver, ExcelUtility.class);
 
 	}
 	
 	@Test
-	public void CreateBlogAssignmentTest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException
+	public void RegisterStudentC15() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException
 	{
-		String BlogtAssignmentName = elib.getExcelData("Assignments", 3, 1);
-		String BlogAssignmentDescription = elib.getExcelData("Assignments", 3, 2);
+		// Get Test Data
 		
-		signin.logintoapp(Constants.userid, Constants.password, Constants.url);
-		asgmnt.selectSection();
-		asgmnt.CreateBlogAssignment(BlogtAssignmentName,BlogAssignmentDescription);
+		String studentid = elib.getExcelData("StudentDetails", 1, 0);
+		String studentpwd = elib.getExcelData("StudentDetails", 1, 1);
+		String studentFirstName = elib.getExcelData("StudentDetails", 1, 2);
+		String studentLastName = elib.getExcelData("StudentDetails", 1, 3);
+				
+		rp.registerC15student(studentid,studentpwd,studentFirstName,studentLastName);
 	}
 	
 	@AfterMethod
-	public void configAftermtd()
+	public void configAftermtd() throws InterruptedException
 	{
+		Thread.sleep(1000);
 		driver.quit();
 	}
 

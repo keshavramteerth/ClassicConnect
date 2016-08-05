@@ -45,10 +45,10 @@ public class WebActivityAssignment
 	{
 		// Get Test Data
 		
-		String WebActivityAssignmentName = elib.getExcelData("Sheet1", 4, 1);
-		String WebActivityAssignmentDescription = elib.getExcelData("Sheet1", 4, 2);
-		String WebActivityAssignmentLinkName = elib.getExcelData("Sheet1", 4, 3);
-		String WebActivityAssignmentLinkURL = elib.getExcelData("Sheet1", 4, 4);
+		String WebActivityAssignmentName = elib.getExcelData("Assignments", 4, 1);
+		String WebActivityAssignmentDescription = elib.getExcelData("Assignments", 4, 2);
+		String WebActivityAssignmentLinkName = elib.getExcelData("Assignments", 4, 3);
+		String WebActivityAssignmentLinkURL = elib.getExcelData("Assignments", 4, 4);
 				
 		signin.logintoapp(Constants.userid, Constants.password, Constants.url);
 		asgmnt.selectSection();

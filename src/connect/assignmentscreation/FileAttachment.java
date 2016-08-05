@@ -45,8 +45,8 @@ public class FileAttachment extends WebdriverCommonlib
 	{
 		// Get Test Data
 		
-		String FileAttachmentAssignmentName = elib.getExcelData("Sheet1", 1, 1);
-		String FileAttachmentAssignmentDescription = elib.getExcelData("Sheet1", 1, 2);
+		String FileAttachmentAssignmentName = elib.getExcelData("Assignments", 1, 1);
+		String FileAttachmentAssignmentDescription = elib.getExcelData("Assignments", 1, 2);
 		
 		signin.logintoapp(Constants.userid, Constants.password, Constants.url);
 		asgmnt.selectSection();

@@ -45,8 +45,8 @@ public class SpeechAssignment
 	{
 		// Get Test Data
 		
-		String SpeechAssignmentName = elib.getExcelData("Sheet1", 6, 1);
-		String SpeechAssignmentDescription = elib.getExcelData("Sheet1", 6, 2);
+		String SpeechAssignmentName = elib.getExcelData("Assignments", 6, 1);
+		String SpeechAssignmentDescription = elib.getExcelData("Assignments", 6, 2);
 				
 		signin.logintoapp(Constants.userid, Constants.password, Constants.url);
 		asgmnt.selectSection();

@@ -2,11 +2,10 @@ package pageobjectrepolib;
 
 import java.awt.AWTException;
 import java.awt.Robot;
-
+import genericlib.Log;
 import genericlib.Constants;
 import genericlib.Driver;
 import genericlib.WebdriverCommonlib;
-
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -41,6 +40,20 @@ public class PaamLoginPage extends WebdriverCommonlib
 	@FindBy(xpath="//a[@class='footer-Link']")
 	private WebElement needhelpLnk;
 	
+	public void commonMtd1()
+	{
+		Driver.driver.get(Constants.c15url);
+		Log.info("Loaded URL into browser");
+		
+		Driver.driver.manage().window().maximize();
+		Log.info("Maximising browser window");
+		
+		waitForpageToLoad();
+		Log.info("Waiting for page to laod");
+		
+		
+		Driver.driver.switchTo().frame(0);
+	}
 	public void commonmtd() throws AWTException, InterruptedException
 	{
 		Driver.driver.get(Constants.c15url);
@@ -48,7 +61,9 @@ public class PaamLoginPage extends WebdriverCommonlib
 		Driver.driver.manage().window().maximize();
 		System.out.println("Maximising browser window");
 		System.out.println("Waiting for page to laod");
+		
 		waitForpageToLoad();
+		Log.info("Waiting for page to laod");
 		
 		Driver.driver.switchTo().frame(0);
 		System.out.println("switched to frame 0");
@@ -106,11 +121,19 @@ public class PaamLoginPage extends WebdriverCommonlib
 	}
 	public void logintoc15(String userName,String password) throws AWTException, InterruptedException
 	{
-		commonmtd();
+		commonMtd1();
 		
 		userNameEdt.sendKeys(userName);
+		Log.info("Entering UserName");
 		
 		passwordEdt.sendKeys(password);
+		Log.info("Entering Password");
+		
 		signinBtn.click();
+		Log.info("Clicking on Signin Button");
+		
+		Thread.sleep(3000);
+		waitForpageToLoad();
+		Log.info("Waiting for page to laod");
 	}
 }

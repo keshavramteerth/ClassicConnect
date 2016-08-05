@@ -45,12 +45,10 @@ public class GroupAssignment
 	{
 		// Get Test Data
 		
-		String GroupAssignmentName = elib.getExcelData("Sheet1", 5, 1);
-	
-		int GroupAssignmentPoints = elib.getExcelnumericData("Sheet1", 5, 5);
+		String GroupAssignmentName = elib.getExcelData("Assignments", 5, 1);
+	    int GroupAssignmentPoints = elib.getExcelnumericData("Assignments", 5, 5);
 		String GroupAssignmentFinalPoints = Integer.toString(GroupAssignmentPoints);
-	    
-		String GroupAssignmentTopicName = elib.getExcelData("Sheet1", 5, 6);
+	    String GroupAssignmentTopicName = elib.getExcelData("Assignments", 5, 6);
 				
 		signin.logintoapp(Constants.userid, Constants.password, Constants.url);
 		asgmnt.selectSection();

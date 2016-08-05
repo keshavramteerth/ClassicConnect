@@ -706,12 +706,14 @@ Boolean calpopup = Driver.driver.findElement(By.xpath("//div[@id='dp-popup']")).
 		Groupsel1.selectByVisibleText("2");
 		Log.info("Selecting number of students per group ");
 		
+		Thread.sleep(2000);
 		addtopicsBtn.click();
+		Thread.sleep(2000);
 		Log.info("Clicking on add topics Button");
 		
 		topicTextField.sendKeys(GroupAssnTopicName);
 		Log.info("Entering Group Assignment Topic Name");
-		
+		Thread.sleep(2000);
 		saveTopicsBtn.click();
 		Log.info("Clicking on Add Topics Buttons to Save the Topic Name");
 		

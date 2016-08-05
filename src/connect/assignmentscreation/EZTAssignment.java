@@ -45,7 +45,7 @@ public class EZTAssignment
 	{
 		// Get Test Data
 		
-		String EZTAssignmentName = elib.getExcelData("Sheet1", 8, 1);
+		String EZTAssignmentName = elib.getExcelData("Assignments", 8, 1);
 		
 		
 		signin.logintoapp(Constants.userid, Constants.password, Constants.url);

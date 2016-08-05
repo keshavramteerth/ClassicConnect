@@ -4,6 +4,7 @@ import genericlib.Constants;
 import genericlib.Driver;
 import genericlib.WebdriverCommonlib;
 
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -15,7 +16,7 @@ import org.testng.annotations.Test;
 import pageobjectrepolib.CoursePage;
 import pageobjectrepolib.LoginPage;
 
-public class MyCourses 
+public class CourseCreation 
 {
 	public WebDriver driver;
 	LoginPage signin;
@@ -25,6 +26,7 @@ public class MyCourses
 	@BeforeMethod
 	public void configBeformtd() throws InterruptedException
 	{
+		DOMConfigurator.configure("log4j.xml");
 		//launch browser
 		driver = Driver.getBrowser();
 		signin = PageFactory.initElements(driver, LoginPage.class);

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+    <classes>
+      <class name="connect.assignmentscreation.FileAttachment"/>
+      <class name="connect.assignmentscreation.GroupAssignment"/>
+      <class name="connect.assignmentscreation.WritingAssignment"/>
+      <class name="connect.assignmentscreation.DiscussionBoardAssignment"/>
+      <class name="connect.assignmentscreation.WebActivityAssignment"/>
+      <class name="connect.assignmentscreation.EZTAssignment"/>
+      <class name="connect.assignmentscreation.SpeechAssignment"/>
+      <class name="connect.assignmentscreation.BlogAssignment"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
