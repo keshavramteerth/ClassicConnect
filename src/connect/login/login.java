@@ -23,7 +23,7 @@ public class login
 	public void configBeformtd() throws InterruptedException
 	{
 		DOMConfigurator.configure("log4j.xml");
-		//launch browser
+		//launch the browser 
 		driver = Driver.getBrowser();
 		signin = PageFactory.initElements(driver, LoginPage.class);
 		
