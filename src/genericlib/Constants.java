@@ -12,6 +12,8 @@ public interface Constants
 	String sectionName = "Cultural Anthropolgy 2";
 	String test = "student1";
 	
+	String mn="Test String";
+	
 	// Staging
     String c15userid = "junestudent103@gmail.com";
     String c15password ="Aa123456";
